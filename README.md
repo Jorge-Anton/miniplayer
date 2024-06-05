@@ -1,4 +1,5 @@
-[![Pub](https://img.shields.io/pub/v/miniplayer?color=2196F3)](https://pub.dev/packages/miniplayer)
+# What changes in this fork
+It's just the miniplayer package but with the dragDownNotifier exposed and the option for tapToCollapse
 
 A lightweight flutter package to simplify the creation of a miniplayer by providing a builder function with the current height and percentage progress. The widget responds to tap and drag gestures and is highly customizable.
 **What is a miniplayer?**
