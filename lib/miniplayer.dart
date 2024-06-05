@@ -130,7 +130,7 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
     }
 
     // Create dragDownPercentage
-    if (widget.dragDownPercentage != null) {
+    if (widget.dragDownPercentage == null) {
       dragDownPercentage = ValueNotifier(0);
     } else {
       dragDownPercentage = widget.dragDownPercentage!;
