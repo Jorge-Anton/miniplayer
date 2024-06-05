@@ -52,7 +52,7 @@ class Miniplayer extends StatefulWidget {
   //Allows you to manually control the miniplayer in code
   final MiniplayerController? controller;
 
-  final bool tapToCollapese;
+  final bool tapToCollapse;
 
   const Miniplayer({
     Key? key,
@@ -68,7 +68,7 @@ class Miniplayer extends StatefulWidget {
     this.onDismiss,
     this.onDismissed,
     this.controller,
-    this.tapToCollapese = true,
+    this.tapToCollapse = true,
   }) : super(key: key);
 
   @override
@@ -227,7 +227,7 @@ class _MiniplayerState extends State<Miniplayer> with TickerProviderStateMixin {
                     //     : PanelState.MIN),
 
                     onTap: () =>
-                      _dragHeight == widget.maxHeight && !widget.tapToCollapese 
+                      _dragHeight == widget.maxHeight && !widget.tapToCollapse 
                         ? null
                         : _snapToPosition(_dragHeight != widget.maxHeight
                           ? PanelState.MAX
